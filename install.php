@@ -20,7 +20,7 @@ function mce_create_table() {
 	if ($wpdb->get_var("SHOW TABLES LIKE '{$wpdb->prefix}my_comments'") != "{$wpdb->prefix}my_comments") {	
 		$charset_collate = '';
 
-		if ($wpdb->has_cap('collation')) {
+		if ($wpdb->supports_collation()) {
 			if (!empty($wpdb->charset)) {
 				$charset_collate = "DEFAULT CHARACTER SET $wpdb->charset";
 			}

@@ -21,7 +21,9 @@ if (!defined('WP_PLUGIN_DIR')) {
 	define('WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins');
 }
 
-define('MCE_DIR', dirname(__FILE__));
+if (!defined('MCE_DIR')) {
+	define('MCE_DIR', dirname(__FILE__));
+}
 
 if (is_admin()) {
 	register_activation_hook(__FILE__, 'mce_install');
