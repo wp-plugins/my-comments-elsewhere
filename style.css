@@ -1,0 +1,30 @@
+.mce_comment {
+}
+.mce_url {	
+	font-weight:bold;
+	display:block;
+}
+.mce_date {	
+}
+.mce_text {	
+}
+.mce_actions { 
+	font-size:90%;
+}
+.mce_pagination {
+}
+.mce_acknowledgement {
+}
+.mce_pagination a, .mce_pagination strong {
+	padding-right:5px;
+}
+.mce_digest_acknowledgement {
+}
+.mce_widget_title {
+}
+.mce_widget_date {
+}
+.mce_widget_excerpt {
+}
+.mce_widget_footer {
+}
